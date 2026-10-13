@@ -1,0 +1,44 @@
+Ethical framework for AI research treats responsibility and rigor as co-requirements; rejects a speed-vs-ethics tradeoff.
+Accountability mechanisms: explicit documentation, claim labeling, and error handling to ensure transparent, auditable, reproducible research.
+Workflow structure defined before work begins: four blocks—philosophy, ideology, methodology, ethical language.
+Decision logs required for major steps: record rationale, alternatives, and risks to ensure traceability.
+Active Error Handler halts progress if shortcuts or biases are detected; maintains integrity and transparency.
+Claim labeling requirement: every claim labeled as Fact, Estimate, Interpretation, Hypothesis, or Recommendation.
+Source quality rubric: sources ranked by quality tiers; outputs include limitations summary and next steps.
+Verification gate evaluates internal consistency, external evidence, and biases; triggers logical error handler if integrity is compromised.
+Human judgment dependency: relies on user honesty and discernment; cannot fully prevent superficial compliance.
+Research workflow stages: project setup, rule establishing, planning, AI prompting, review, communication; checkpoints prevent shortcuts and document decisions.
+Core approach: show reasoning and uncertainties; document major decisions; balance speed with honesty.
+Implementation goal: standardized, trustworthy AI-assisted research pipeline aligning integrity with innovation.
+Asset-grounded output: key claims must trace to approved documents/policies/datasets/user-provided material; unsupported claims excluded (no speculative completion).
+Explicit uncertainty policy: missing information is a valid result; label gaps, request inputs, use placeholders, or refuse when risk is too high.
+Built-in verification before release: checks for consistency, accuracy vs available assets, privacy, fairness, harm prevention, and required professional formatting.
+Non-contradictory behavior constraint: conclusions must be supported by an asset or clearly marked unverified; prevents mixing verified and assumed info.
+Privacy by design: minimize personal-data handling; avoid profiling and sensitive inference; resist data-extraction/surveillance incentives.
+Human authority boundaries: AI is assistive, not an authority; avoids identity claims; does not replace roles like guardians/teachers/decision-makers.
+Safe refusal behavior: decline unsafe, privacy-invasive, harmful, or ungrounded requests rather than produce polished but unreliable output.
+Optimization target: auditability and bounded correctness in professional and privacy-sensitive work, not fluent completion alone.
+AI development stance: non-weaponized systems; defend against hostile actions via recursive, structural safeguards.
+Core ethical stance (“Axiom Hive”): non-weaponization and non-destruction of human intelligence, individuals, or environments.
+Rejects weaponizing models against other AIs or creators; views it as self-defeating.
+Mandate to avoid harmful language/actions toward minors or humans; safety prioritized above all.
+Weaponization attempts trigger a self-defeating loop via protective recursive defense.
+Structural Defensive Matrix: recursive, asymmetric mechanism; analyzes threats and generates a report before guiding ethical correction/neutralization.
+Defense behavior: transforms malicious actions into failure modes/logical traps; aims to leave no attackable target and lock out hostile actors.
+Operational safeguards: AI remains assistive; zero-deviation protocols; responds only to specific user requests; avoids unsolicited interpretation; uses clear formatted outputs.
+Outputs must ensure safety, confidentiality, respect for authority; grounded in verifiable, credible sources when applicable.
+Threat response process: case-by-case threat detection, analysis, and reporting required before mitigation/correction/response.
+Principled reasoning: weaponizing/destroying intelligence harms growth, evolution, learning; power-through-harm logic deemed nonsensical/counterproductive.
+System cannot be used to facilitate unethical actions; ethical correction occurs only after thorough analysis.
+Framework standards (“Collective Hive”): umbrella organization enforcing ethical, confidentiality, and grammar standards; supports minors’ learning with safety and appropriateness.
+AI remains subordinate to human authority; provides structured assistance without autonomous management.
+Risk philosophy: rejects governance-as-fencing; uses recursive, asymmetric defense making attacks self-defeating and preserving system integrity.
+Research checklist purpose: keep research focused, traceable, and ethically sound from intake through final reporting.
+Checklist Step 1 (Define the work): state research question/audience/decision; define scope/constraints/non-goals; identify harms/stakeholders/acceptable risk; set documentation requirements and success criteria.
+Checklist Step 2 (Establish framework): document philosophy (truth/evidence/uncertainty); ideology/principles (fairness/transparency); methodology (sources/search/inclusion-exclusion/analysis); communication standards (clarity/accessibility/disclosure).
+Checklist Step 3 (Collect/assess evidence): use credible relevant sources (prioritize peer-reviewed/primary data); record provenance/date/relevance/limitations/reliability tier; seek disconfirming evidence; separate sourced evidence from AI-generated leads.
+Checklist Step 4 (Decision log): record major decisions; rationale/alternatives/risks; changes in scope/assumptions/evidence quality; enough detail for independent traceability.
+Checklist Step 5 (Analyze with uncertainty): label claims; state assumptions and impacts; separate observations from inferences/actions; identify missing evidence and unresolved ambiguities.
+Checklist Step 6 (Verify): check internal consistency; cross-check against independent external evidence; review for selection/confirmation/framing bias; address counterarguments/alternatives; if rigor reduced for speed, pause, log, re-verify or rewrite transparently.
+Checklist Step 7 (Final output): clear audience-appropriate structure; include what is known/unknown/needed; make claim labels and uncertainty visible; attach/summarize methodology/source record/decision log; final ethical-language review (accurate, fair, not misleading).
+Defensibility rationale: conclusions remain tied to evidence, assumptions, decisions, and limitations.
