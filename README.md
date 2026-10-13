@@ -33,7 +33,7 @@ This repository is primarily a documentation and template toolkit. It does not r
 ### Prerequisites
 
 - Git, for cloning and tracking changes.
-- Python 3.8 or later, only to run the optional preservation validator. The validator uses the Python standard library; there are no package dependencies.
+- Python 3.8 or later. The preservation validator and unit tests use the Python standard library; `coverage` is needed only for local coverage reporting.
 
 The documents and CSV templates can also be used without Python.
 
@@ -53,6 +53,20 @@ python3 scripts/validate_framework.py
 ```
 
 A successful run reports that all 44 source points are preserved verbatim and each has an example. The script returns a non-zero exit status if it detects missing, changed, or unpaired points. Run it after editing either the source text or the expanded framework.
+
+### Run unit tests and coverage
+
+Install the coverage reporter and run the tests from the repository root:
+
+```bash
+python3 -m pip install coverage
+python3 -m unittest discover -s tests -v
+python3 -m coverage run --branch --source=scripts -m unittest discover -s tests -v
+python3 -m coverage report --include="scripts/validate_framework.py" --fail-under=90
+python3 -m coverage html
+```
+
+Open `htmlcov/index.html` for a detailed local report. The GitHub Actions workflow runs the unit tests, enforces a 90% minimum coverage threshold, writes a coverage summary to the Actions job summary, and uploads HTML/XML reports as a 14-day artifact on pushes and pull requests.
 
 ### Start a research project with the toolkit
 
