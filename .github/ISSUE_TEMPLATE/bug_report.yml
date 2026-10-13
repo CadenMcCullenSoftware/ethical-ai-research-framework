@@ -1,0 +1,61 @@
+name: Bug or accuracy report
+description: Report a defect, broken link, validator issue, or inaccurate framework content.
+title: "Bug: "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Report actionable issues in the repository. Do not include credentials, private personal data, or confidential research records.
+  - type: dropdown
+    id: issue_type
+    attributes:
+      label: Issue type
+      options:
+        - Validator or workflow defect
+        - Broken link or formatting problem
+        - Inaccuracy or inconsistency
+        - Other repository defect
+    validations:
+      required: true
+  - type: input
+    id: location
+    attributes:
+      label: Affected file, section, or framework point
+      placeholder: "Example: docs/framework-with-examples.md, point 12"
+    validations:
+      required: true
+  - type: textarea
+    id: summary
+    attributes:
+      label: What is wrong?
+      description: Describe the problem clearly and distinguish observed facts from assumptions.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Steps to reproduce
+      description: For script or workflow issues, include the command and sanitized output where relevant.
+      placeholder: "1. Run ...\n2. Observe ..."
+    validations:
+      required: false
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected result and actual result
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Supporting references or evidence
+      description: Provide public links or source locations, if available. Do not paste sensitive material.
+    validations:
+      required: false
+  - type: checkboxes
+    id: privacy
+    attributes:
+      label: Before submitting
+      options:
+        - label: I have not included credentials, private personal data, or confidential project information.
+          required: true

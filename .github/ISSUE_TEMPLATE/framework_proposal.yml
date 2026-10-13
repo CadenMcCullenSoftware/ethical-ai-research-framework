@@ -1,0 +1,73 @@
+name: Framework or documentation proposal
+description: Propose a considered improvement to the framework, examples, templates, or tooling.
+title: "Proposal: "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Explain the need and intended effect. Keep proposals grounded, distinguish evidence from interpretation, and do not include private or confidential material.
+  - type: dropdown
+    id: proposal_type
+    attributes:
+      label: Proposal type
+      options:
+        - Clarify or amend source-derived framework text
+        - Add or revise an illustrative example
+        - Improve research templates or implementation guidance
+        - Improve validator or GitHub Actions workflow
+        - Other
+    validations:
+      required: true
+  - type: input
+    id: location
+    attributes:
+      label: Affected file, section, or point(s)
+      placeholder: "Example: templates/verification-checklist.md"
+    validations:
+      required: true
+  - type: textarea
+    id: need
+    attributes:
+      label: Problem or need
+      description: Describe who is affected and what gap the proposal addresses.
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed change
+      description: Provide suggested wording or behavior where practical. Clearly mark illustrative text.
+    validations:
+      required: true
+  - type: textarea
+    id: rationale
+    attributes:
+      label: Rationale, evidence, and alternatives
+      description: Cite public sources where relevant; separate documented evidence, interpretation, and recommendation.
+    validations:
+      required: true
+  - type: textarea
+    id: risks
+    attributes:
+      label: Risks, limitations, or unintended effects
+      description: Include privacy, fairness, safety, authority, and maintenance considerations where relevant.
+    validations:
+      required: true
+  - type: dropdown
+    id: source_change
+    attributes:
+      label: Does this propose changing the supplied source text?
+      options:
+        - "No"
+        - "Yes — I will identify the point(s), rationale, and proposed change"
+    validations:
+      required: true
+  - type: checkboxes
+    id: privacy
+    attributes:
+      label: Before submitting
+      options:
+        - label: I have not included credentials, private personal data, or confidential project information.
+          required: true
+        - label: I have distinguished source-supported statements from examples, assumptions, and recommendations.
+          required: true
